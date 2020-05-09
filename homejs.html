@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="./css/stylejs.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <h1>ASSIGNMENT 4</h1>   
+    </div>
+    <div>
+        <h5>Question 1</h5>
+        <p>  JavaScript function to get an array and to read the first element of an array.
+            Check whether it is prime or not. 
+            </p>
+            <form >
+                <input type="number" id="arrnum" placeholder="Array Length" required>
+                <input type="text" id="arr1" placeholder="1,2,3.." required>
+                <button type="button" onclick="primeEl1(arr1.value,arrnum.value)" class="btn btn-success">Prime Check</button>
+            </form>
+            <p class="ans"></p>
+    </div>
+    <div>
+        <h5>Question 2</h5>
+        <p>  JavaScript program to find the most frequent item of an array.
+            </p>
+            <form >
+                <input type="number" id="lng" placeholder="Array Length [Min 2]" required>
+                <input type="text" id="arr2" placeholder="1,2,3.." required>
+                <button type="button" onclick="arrayQ2(arr2.value,lng.value)" class="btn btn-success">Frequent item</button>
+            </form>
+            <p class="ans"></p>
+    </div>
+    <div>
+        <h5>Question 3</h5>
+        <p> JavaScript program which accept a string as input and swap the case of
+            each character.
+            </p>
+            <form>
+                <input type="text" id="strg" required>
+                <button onclick="upLo(strg.value);" type="button" class="btn btn-success">Change Case</button>
+            </form>
+            <p class="ans"></p>
+    </div>
+    <div>
+        <h5>Question 4</h5>
+        <p>JavaScript program to find the sum of squares of the elements of an array</p>
+            <form>
+                <button onclick="sqSum4();" type="button" class="btn btn-success">Answer</button>
+            </form>
+            <p class="ans"></p>
+    </div>
+    <div>
+        <h5>Question 5</h5>
+        <p> JavaScript for loop that will iterate from 0 to 15. For each iteration, check
+            if the current number is odd or even, and display the message to the screen as odd
+            or even</p>
+            <form>
+                <button onclick="oddEven();" type="button" class="btn btn-success">Odd or Even</button>
+            </form>
+            <p class="ans"></p>
+    </div>
+    <div>
+        <h5>Question 6</h5>
+        <p> JavaScript function to truncate a string if it is longer than the specified
+            number of characters.
+            </p>
+            <form>
+                <input type="text" id="str" placeholder="STRING" required>
+                <input type="number" id="limit" required>
+                <button onclick="truncate(str.value,limit.value);" type="button" class="btn btn-success">Truncate</button>
+            </form>
+            <p class="ans"></p>
+    </div>
+    <div>
+        <h5>Question 7</h5>
+        <p>JavaScript program that accept two integers and display the larger using
+            findLarge() function.</p>
+            <form>
+                <input type="number" id="intg1">
+                <input type="number" id="intg2">
+                <button onclick="findLarge(intg1.value,intg2.value);" type="button" class="btn btn-success">Largest</button>
+            </form>
+            <p class="ans"></p>
+    </div>
+    <div>
+        <h5>Question 8</h5>
+        <p>JavaScript program using for…in to read the objects from an array entered
+            by an user and to arrange it in alphabetical order</p>
+            <form>
+                <input type="number" id="l">
+                <input type="text" id="obj">
+                <button onclick="sorting(obj.value,l.value)" type="button" class="btn btn-success">Sort</button>
+            </form>
+            <p class="ans"></p>
+     </div>
+    <div>
+        <h5>Question 9</h5>
+        <p> JavaScript program to print the letters of the word “Javascript” as below in
+            each line using for…of</p>
+            <p class="ans"> <img src="./images/9js.png" ></p>
+            <form>
+                <button onclick="jsGen()" type="button" class="btn btn-success">JavaScript</button>
+            </form>
+    </div>
+    <div>
+        <h5>Question 10</h5>
+        <p> JavaScript program to construct the following pattern</p>
+        <p class="ans"> <img src="./images/pattern.png" ></p>
+        <input type="range" id="ptrnNo" name="val" min="1" max="10" value="4" onchange="patternGen(ptrnNo.value)">
+        <label for="val">Pattern</label>
+                <!-- <button onclick=";" type="button" class="btn btn-success">Pattern</button> -->
+    </div>
+    <script src="./script/scriptjs.js"></script>
+</body>
+</html>
