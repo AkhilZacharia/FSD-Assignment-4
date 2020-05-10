@@ -98,7 +98,7 @@ function findLarge(int1,int2){
 //***************end****************** */
 //Q8. JavaScript program using for…in to read the objects from an array entered by an user and to arrange it in alphabetical order.
 
-    function sort4(arr,len){
+    function sorting(arr,len){
         if(len>1){
             var Format ="^([A-Za-z]+)";
             for(i=1;i<len;i++){
@@ -111,15 +111,17 @@ function findLarge(int1,int2){
             var arrFormat =/^([A-Za-z]+)$/;
         }
         if((arrFormat.test(arr))){
-        var items = [];
-        items.push(arr);
-        for(x in items){
-            items.sort();
+        var res = [];
+        arr.toString()
+        res = arr.split(",");
+        for(x in res){
+            res.sort();
+            // console.log(res)
         }
-        src[7].innerHTML="<h6>"+items+" </h6>"; 
+        src[7].innerHTML="<h6> Sorted Alphabetically: "+res+" </h6>"; 
         }
         else{
-            alert("Accepted Format 1,2,3,... Also make sure the array length is satisfied");
+            alert("Accepted Format a,b,cfd,... Also make sure that its a string and array length is satisfied");
         }
     } 
 
