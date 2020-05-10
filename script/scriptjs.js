@@ -142,13 +142,36 @@ function truncate(str,limit){
 
 //Q 4 . sum of squares of the elements of an array
 
-function sqSum4(){
-    var arr =[2,3,1];
-    var out =0;
-    for(i=0;i<arr.length;i++){
-        out += Math.pow(arr[i],2);
+function sqSum4(arr,len){
+    if(len>1){
+        var Format ="^([0-9]+)";
+        for(i=1;i<len;i++){
+            Format +="[,]([0-9]+)"
+        }
+        Format +="$";
+        var arrFormat = new RegExp(Format);
     }
-    src[3].innerHTML=`Sum of squares of the elements of the array [${arr}] is ${out}`;
+    else{
+        var arrFormat =/^([0-9]+)$/;
+    }
+    if((arrFormat.test(arr))){
+        // var ar =[];
+        var res = [];
+        res = arr.split(",");
+        // ar.push(arr)
+        // console.log(res);
+        Number(res)
+        // console.log(res);
+        var out =0;
+        for(i=0;i<res.length;i++){
+            out += Math.pow(res[i],2);
+            // console.log(res);
+        }
+        src[3].innerHTML=`Sum of squares of the elements of the array [${res}] is ${out}`; 
+    }
+    else{
+        alert("Accepted Format 1,2,3,... Also make sure that its a number and array length is satisfied");
+    }
 }
 //************************************end****************************************
 

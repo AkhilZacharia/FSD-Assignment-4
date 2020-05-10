@@ -52,7 +52,9 @@
         <h5>Question 4</h5>
         <p>JavaScript program to find the sum of squares of the elements of an array</p>
             <form>
-                <button onclick="sqSum4();" type="button" class="btn btn-success">Answer</button>
+                <input type="number" id="lng" placeholder="Array Length" required>
+                <input type="text" id="arr2" placeholder="1,2,3.." required>
+                <button onclick="sqSum4(arr2.value,lng.value);" type="button" class="btn btn-success">Answer</button>
             </form>
             <p class="ans"></p>
     </div>
